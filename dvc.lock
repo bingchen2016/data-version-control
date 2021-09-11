@@ -24,22 +24,22 @@ stages:
       md5: 0fede602a36a04c10626e96f0b77acae
       size: 202903
     - path: src/train.py
-      md5: 8afd0b487365179d1b8bcca7e57a64cd
-      size: 1324
+      md5: 8963a4e6927bdd8570e35d3fc187874f
+      size: 1460
     outs:
     - path: model/model.joblib
-      md5: 7aa5b41decca8c03d93353a3b5642e65
-      size: 241076
+      md5: 21ffc1684406824e57629b17069368d9
+      size: 1706471
   evaluate:
     cmd: python src/evaluate.py
     deps:
     - path: model/model.joblib
-      md5: 7aa5b41decca8c03d93353a3b5642e65
-      size: 241076
+      md5: 21ffc1684406824e57629b17069368d9
+      size: 1706471
     - path: src/evaluate.py
       md5: b197277667d6269271fff4ae4af8a941
       size: 645
     outs:
     - path: metrics/accuracy.json
-      md5: f5406f4e5024e6c2ed89be78bd27175f
+      md5: 0cd794424501514dd090fcc82fa16064
       size: 32

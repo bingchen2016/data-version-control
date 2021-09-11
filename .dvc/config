@@ -1,4 +1,7 @@
 [core]
     remote = remote_storage
+[cache]
+    dir = /home/bchen/code/tmp
+    type = symlink
 ['remote "remote_storage"']
     url = /home/bchen/code/dvc_remote
